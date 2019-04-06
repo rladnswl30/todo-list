@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoInput from '../components/TodoInput';
+import TodoInput from '../components/TodoInput/TodoInput';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -8,16 +8,16 @@ import * as inputActions from '../modules/input';
 import * as todosActions from '../modules/todos';
 
 class TodoInputContainer extends Component {
-    id = 1
+    id = 1;
     getId = () => {
         return ++this.id;
-    }
+    };
 
     handleChange = (e) => {
         const { value } = e.target;
         const { InputActions } = this.props;
         InputActions.setInput(value);
-    }
+    };
 
     handleInsert = () => {
         const { InputActions, TodoActions, value } = this.props;
@@ -28,7 +28,7 @@ class TodoInputContainer extends Component {
         };
         TodoActions.insert(todo);
         InputActions.setInput('');
-    }
+    };
 
     render() {
         const { value } = this.props;
