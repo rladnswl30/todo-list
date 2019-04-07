@@ -35,7 +35,7 @@ export default handleActions({
         const { id, text, done } = action.payload;
 
         // payload 안에 있는 id, text, done의 reference를 만들어준다.
-        // == push(Map(action.payload);
+        // == state.push(Map(action.payload);
         return state.push(Map({
             id,
             text,

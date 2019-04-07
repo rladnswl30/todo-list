@@ -17,7 +17,7 @@ class TodoItem extends Component {
                 <input className={cx('tick')} type="checkbox" checked={done} readOnly />
                 <div className={cx('text', { done })}>{children}</div>
                 <div className={cx('delete')} onClick={(e) => { onRemove(); e.stopPropagation(); }}>[지우기]</div>
-            </div >
+            </div>
         );
     }
 }
