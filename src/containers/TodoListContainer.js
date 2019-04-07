@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import TodoList from '../components/TodoList/TodoList';
 
+// component를 store에 연결시키기 위해 필요
 import { connect } from 'react-redux';
+// dispatch를 binding 할 때 편리하게 한다.
 import { bindActionCreators } from 'redux';
 
+// reducers
 import * as todosActions from '../reducers/todos';
 
 class TodoListContainer extends Component {
@@ -30,6 +33,7 @@ class TodoListContainer extends Component {
     }
 }
 
+// connect([mapStateToProps], [mapDispatchToProps], [mergeProps])
 export default connect(
     (state) => ({
         todos: state.todos
@@ -37,4 +41,4 @@ export default connect(
     (dispatch) => ({
         TodosActions: bindActionCreators(todosActions, dispatch)
     })
-)(TodoListContainer)
+)(TodoListContainer);
