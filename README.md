@@ -1,3 +1,8 @@
+# Todo-list project
+
+책 : 리액트를 다루는 기술
+저자 : 김민준
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
