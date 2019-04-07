@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PageTemplate from './PageTemplate';
+import PageTemplate from './PageTemplate/PageTemplate';
 import TodoInputContainer from '../containers/TodoInputContainer'
 import TodoListContainer from '../containers/TodoListContainer'
 
@@ -16,7 +16,9 @@ class App extends Component {
 
 export default App;
 
-/* import React, { Component } from 'react';
+/*
+***** Ducks구조로 바꾸기 전 코드 *****
+import React, { Component } from 'react';
 import PageTemplate from './PageTemplate';
 import TodoInput from './TodoInput';
 import TodoList from './TodoList';
