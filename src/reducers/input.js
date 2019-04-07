@@ -17,8 +17,6 @@ const initialState = Map({
 // action type에 binding할 함수 작성
 export default handleActions({
     [SET_INPUT]: (state, action) => {
-        // console.log(state);
-        // console.log(action);
         return state.set('value', action.payload)
     }
 }, initialState);

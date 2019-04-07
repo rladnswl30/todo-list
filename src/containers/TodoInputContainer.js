@@ -33,13 +33,20 @@ class TodoInputContainer extends Component {
         InputActions.setInput('');
     };
 
+    handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            this.handleInsert();
+        }
+    }
+
     render() {
         const { value } = this.props;
-        const { handleChange, handleInsert } = this;
+        const { handleChange, handleInsert, handleKeyPress } = this;
         return (
             <TodoInput
                 onChange={handleChange}
                 onInsert={handleInsert}
+                onKeyPress={handleKeyPress}
                 value={value}
             />
         );
