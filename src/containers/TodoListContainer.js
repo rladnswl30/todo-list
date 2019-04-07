@@ -4,7 +4,7 @@ import TodoList from '../components/TodoList/TodoList';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import * as todosActions from '../modules/todos';
+import * as todosActions from '../reducers/todos';
 
 class TodoListContainer extends Component {
     handleToggle = (id) => {
