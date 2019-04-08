@@ -1,4 +1,4 @@
-import input from './input'
+import input from './input';
 import todos from './todos';
 
 // reducer를 합치기 위해 combineReducers 사용
